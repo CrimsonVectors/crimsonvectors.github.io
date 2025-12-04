@@ -13,7 +13,8 @@ I stand at the intersection of **Logic** and **Light** — capturing cinematic m
 * **Languages:** C, Python, MATLAB(learned),Java(learning).
 * **Achievements:** * Top-tier Academic Scholarship recipient.
     * ICPC Programming Contest (Silver Prize).
-    * IELTS 7.0:L-6.5 R-9 W-6.5 S-6.
+    * IELTS 7.0
+         L-6.5 R-9 W-6.5 S-6.
 
 ---
 
