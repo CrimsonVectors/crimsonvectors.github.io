@@ -9,11 +9,11 @@ I stand at the intersection of **Logic** and **Light** — writing clean code by
 ---
 
 ### 💻 Tech & Academic Background
-* [cite_start]**Major:** Computer Science and Technology (Honors College).
-* [cite_start]**Languages:** C, Python, MATLAB[cite: 4, 10].
-* [cite_start]**Achievements:** * Top-tier Academic Scholarship recipient.
-    * [cite_start]ICPC Programming Contest (Silver Prize).
-    * [cite_start]IELTS 7.0[cite: 15, 51].
+* **Major:** Computer Science and Technology (Honors College).
+* **Languages:** C, Python, MATLAB[cite: 4, 10].
+* **Achievements:** * Top-tier Academic Scholarship recipient.
+    * ICPC Programming Contest (Silver Prize).
+    * IELTS 7.0:L-6.5 R-9 W-6.5 S-6.
 
 ---
 
@@ -30,7 +30,7 @@ When I'm not debugging or studying algorithms, here's what defines me:
 ---
 
 ### 🌍 Global Footprint
-[cite_start]I love exploring new cultures and have participated in various international academic programs[cite: 16, 17, 41]. My journey so far:
+I love exploring new cultures and have participated in various international academic programs. My journey so far:
 
 * 🇦🇪 **Abu Dhabi** (My first overseas adventure)
 * 🇦🇺 **Melbourne, Australia**
@@ -41,6 +41,6 @@ When I'm not debugging or studying algorithms, here's what defines me:
 
 ### 📫 Connect with Me
 * Check out my **[Portfolio Website](https://crimsonvectors.github.io)** for my projects and gallery.
-* [cite_start]Email: lishouwei@mail.nwpu.edu.cn [cite: 66]
+* Email: lishouwei@mail.nwpu.edu.cn | shouwei.idea@gmail.com
 
 ![Shouwei's GitHub stats](https://github-readme-stats.vercel.app/api?username=crimsonvectors&show_icons=true&theme=minimal)
