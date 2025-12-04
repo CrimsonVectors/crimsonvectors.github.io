@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shouwei Li | CS & Creator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">SHOUWEI LI</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="hero" class="hero-section">
+        <div class="profile-container">
+            <img src="assets/images/avatar.jpg" alt="Shouwei Li" class="avatar">
+            <h1>Shouwei Li</h1>
+            <p class="subtitle">CS Junior & Visual Storyteller</p>
+            <p class="bio-text">
+                Exploring the intersection of Code, Logic, and Light. <br>
+                Based in University, crafting algorithms and capturing moments.
+            </p>
+            
+            <div class="social-icons">
+                <a href="https://github.com/crimsonvectors" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-play-circle"></i></a> 
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="content-section">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Distributed System Study</h3>
+                <p class="tech-stack">Go / Docker / RPC</p>
+                <p>A lightweight distributed key-value storage system implementing Raft consensus algorithm.</p>
+                <a href="#" class="card-link">View Code &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Neural Network Visualization</h3>
+                <p class="tech-stack">Python / PyTorch / D3.js</p>
+                <p>Interactive web tool to visualize the activation layers of CNN models for educational purposes.</p>
+                <a href="#" class="card-link">View Code &rarr;</a>
+            </div>
+             <div class="card">
+                <h3>Personal Static Blog</h3>
+                <p class="tech-stack">HTML / CSS / JS</p>
+                <p>The minimalistic portfolio site you are looking at right now.</p>
+                <a href="#" class="card-link">View Code &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="content-section dark-bg">
+        <h2 class="section-title text-white">Visual Gallery</h2>
+        <p class="section-desc text-white">Moments captured through my lens.</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item item-wide">
+                <div class="placeholder-video">Video Showreel (Insert Embed Code Here)</div>
+            </div>
+            <div class="gallery-item"><div class="placeholder-img">Photo 1</div></div>
+            <div class="gallery-item"><div class="placeholder-img">Photo 2</div></div>
+            <div class="gallery-item"><div class="placeholder-img">Photo 3</div></div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; <span id="year"></span> Shouwei Li. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
