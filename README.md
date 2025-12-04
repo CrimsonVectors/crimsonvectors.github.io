@@ -4,13 +4,13 @@
 
 I am a Junior Computer Science undergraduate at **Northwestern Polytechnical University (NWPU)**, currently studying as an exchange student at **Sapienza University of Rome** 🇮🇹.
 
-I stand at the intersection of **Logic** and **Light** — writing clean code by day and capturing cinematic moments by night.
+I stand at the intersection of **Logic** and **Light** — capturing cinematic moments by day and writing clean code by night.
 
 ---
 
 ### 💻 Tech & Academic Background
 * **Major:** Computer Science and Technology (Honors College).
-* **Languages:** C, Python, MATLAB[cite: 4, 10].
+* **Languages:** C, Python, MATLAB(learned),Java(learning).
 * **Achievements:** * Top-tier Academic Scholarship recipient.
     * ICPC Programming Contest (Silver Prize).
     * IELTS 7.0:L-6.5 R-9 W-6.5 S-6.
