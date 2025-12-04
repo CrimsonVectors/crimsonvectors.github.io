@@ -99,8 +99,7 @@ a:hover {
     margin-bottom: 2rem;
     /* 给头像加一点微妙的阴影 */
     box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
-    filter: grayscale(100%); /* 让头像默认黑白，更有质感 */
-    transition: filter 0.3s ease;
+
 }
 
 .avatar:hover {
