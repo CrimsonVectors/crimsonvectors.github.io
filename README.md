@@ -43,5 +43,3 @@ I love exploring new cultures and have participated in various international aca
 ### 📫 Connect with Me
 * Check out my **[Portfolio Website](https://crimsonvectors.github.io)** for my projects and gallery.
 * Email: lishouwei@mail.nwpu.edu.cn | shouwei.idea@gmail.com
-
-![Shouwei's GitHub stats](https://github-readme-stats.vercel.app/api?username=crimsonvectors&show_icons=true&theme=minimal)
