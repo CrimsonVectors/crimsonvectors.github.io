@@ -2,7 +2,7 @@
 
 > **Computer Science Student | Visual Storyteller | ENFP 🌻**
 
-[cite_start]I am a Junior Computer Science undergraduate at **Northwestern Polytechnical University (NWPU)**[cite: 21, 29], currently studying as an exchange student at **Sapienza University of Rome** 🇮🇹.
+I am a Junior Computer Science undergraduate at **Northwestern Polytechnical University (NWPU)**, currently studying as an exchange student at **Sapienza University of Rome** 🇮🇹.
 
 I stand at the intersection of **Logic** and **Light** — writing clean code by day and capturing cinematic moments by night.
 
