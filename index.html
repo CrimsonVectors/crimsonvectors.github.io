@@ -1,333 +1,104 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Li Shouwei | CS Undergraduate</title>
-    <meta name="description" content="Portfolio of Li Shouwei, a Junior Computer Science Student at NPU Honors College.">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
+    <title>Shouwei Li | CS & Creator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        npuBlue: '#004a99', // Approximate NPU blue
-                        darkBg: '#0f172a',
-                        cardBg: '#1e293b',
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <style>
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0f172a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #334155; 
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #475569; 
-        }
-        
-        .gradient-text {
-            background: linear-gradient(to right, #60a5fa, #3b82f6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="bg-darkBg text-slate-300 font-sans antialiased selection:bg-blue-500 selection:text-white">
+<body>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 start-0 border-b border-slate-800 bg-darkBg/90 backdrop-blur-md transition-all duration-300" id="navbar">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <span class="self-center text-xl font-bold whitespace-nowrap text-white">LSW<span class="text-blue-500">.</span></span>
-            </a>
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none" aria-controls="navbar-default" aria-expanded="false" id="menu-toggle">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-gray-800 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
-                    <li>
-                        <a href="#about" class="block py-2 px-3 text-white hover:text-blue-400 md:p-0 transition">About</a>
-                    </li>
-                    <li>
-                        <a href="#education" class="block py-2 px-3 text-white hover:text-blue-400 md:p-0 transition">Education</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="block py-2 px-3 text-white hover:text-blue-400 md:p-0 transition">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="block py-2 px-3 text-white hover:text-blue-400 md:p-0 transition">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="block py-2 px-3 text-blue-400 hover:text-blue-300 md:p-0 transition">Contact</a>
-                    </li>
-                </ul>
+    <header class="navbar">
+        <div class="logo">SHOUWEI LI</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="about" class="min-h-screen flex items-center justify-center pt-16">
-        <div class="max-w-screen-xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-            <div class="order-2 md:order-1 animate-fade-in-up">
-                <p class="text-blue-400 font-mono mb-2">Hello, I'm</p>
-                <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight">
-                    Li <span class="gradient-text">Shouwei</span>
-                </h1>
-                <h2 class="text-2xl md:text-3xl text-slate-400 mb-6">
-                    Computer Science Undergraduate
-                </h2>
-                <p class="text-lg text-slate-400 mb-8 leading-relaxed max-w-lg">
-                    I am a Junior student at the <strong class="text-slate-200">Honors College (Education Experiment College)</strong> of Northwestern Polytechnical University (NPU). 
-                    Passionate about algorithms, software engineering, and exploring the frontiers of computer science.
-                </p>
-                <div class="flex space-x-4">
-                    <a href="#contact" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-800 font-medium rounded-lg text-sm px-6 py-3 transition duration-300">
-                        Get in Touch
-                    </a>
-                    <a href="https://github.com/" target="_blank" class="text-white border border-slate-600 hover:bg-slate-800 focus:ring-4 focus:ring-slate-700 font-medium rounded-lg text-sm px-6 py-3 flex items-center gap-2 transition duration-300">
-                        <i class="fab fa-github text-lg"></i> GitHub
-                    </a>
-                </div>
-            </div>
-            <div class="order-1 md:order-2 flex justify-center">
-                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-1 bg-gradient-to-br from-blue-500 to-transparent">
-                    <div class="w-full h-full rounded-full bg-cardBg overflow-hidden flex items-center justify-center">
-                        <!-- Placeholder for Profile Image -->
-                        <!-- Replace 'src' with your actual photo URL -->
-                        <img src="https://ui-avatars.com/api/?name=Li+Shouwei&background=0f172a&color=3b82f6&size=256&font-size=0.33" alt="Li Shouwei" class="w-full h-full object-cover hover:scale-110 transition duration-500">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 
-    <!-- Education Section -->
-    <section id="education" class="py-20 bg-darkBg">
-        <div class="max-w-screen-xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-3">
-                <span class="text-blue-500">01.</span> Education
-                <div class="h-px bg-slate-700 flex-grow ml-4"></div>
-            </h2>
-            
-            <div class="relative border-l border-slate-700 ml-3 md:ml-6 space-y-10">
-                <!-- NPU Entry -->
-                <div class="mb-10 ml-6">
-                    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-900 rounded-full -left-3 ring-8 ring-darkBg">
-                        <i class="fas fa-graduation-cap text-blue-300 text-xs"></i>
-                    </span>
-                    <div class="p-6 bg-cardBg rounded-lg border border-slate-700 shadow-lg hover:border-blue-500/50 transition duration-300">
-                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                            <h3 class="text-xl font-bold text-white">Northwestern Polytechnical University (NPU)</h3>
-                            <span class="text-sm text-blue-400 font-mono border border-blue-400/30 px-2 py-1 rounded mt-2 md:mt-0">Sept 2022 - Present</span>
-                        </div>
-                        <p class="text-lg text-slate-300 mb-2">B.Eng. in Computer Science and Technology</p>
-                        <p class="text-sm text-slate-400 italic mb-4">Honors College (Education Experiment College)</p>
-                        <ul class="list-disc list-inside text-slate-400 space-y-1">
-                            <li><strong>GPA:</strong> Top 10% (Sample Placeholder)</li>
-                            <li><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Operating Systems, Computer Networks, Database Systems, Artificial Intelligence.</li>
-                            <li><strong>Awards:</strong> University Scholarship (2023, 2024), Meritorious Student.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-darkBg">
-        <div class="max-w-screen-xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-3">
-                <span class="text-blue-500">02.</span> Selected Projects
-                <div class="h-px bg-slate-700 flex-grow ml-4"></div>
-            </h2>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Project Card 1 -->
-                <div class="group bg-cardBg rounded-xl p-6 border border-slate-700 hover:-translate-y-2 transition duration-300 hover:border-blue-500/50 flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-4">
-                        <i class="far fa-folder text-4xl text-blue-500"></i>
-                        <div class="flex gap-4">
-                            <a href="#" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
-                            <a href="#" class="text-slate-400 hover:text-white transition"><i class="fas fa-external-link-alt text-xl"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition">Personal Website</h3>
-                    <p class="text-slate-400 mb-4 flex-grow">
-                        A responsive, single-page portfolio website built with HTML5 and Tailwind CSS. Deployed on GitHub Pages to showcase academic and technical achievements.
-                    </p>
-                    <div class="flex flex-wrap gap-2 font-mono text-xs text-blue-300 mt-auto">
-                        <span>HTML</span>
-                        <span>Tailwind</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-
-                <!-- Project Card 2 (Placeholder) -->
-                <div class="group bg-cardBg rounded-xl p-6 border border-slate-700 hover:-translate-y-2 transition duration-300 hover:border-blue-500/50 flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-4">
-                        <i class="far fa-folder text-4xl text-blue-500"></i>
-                        <div class="flex gap-4">
-                            <a href="#" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition">Course Management System</h3>
-                    <p class="text-slate-400 mb-4 flex-grow">
-                        A full-stack web application for managing student courses and grades. Implemented user authentication and database integration.
-                    </p>
-                    <div class="flex flex-wrap gap-2 font-mono text-xs text-blue-300 mt-auto">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>MySQL</span>
-                        <span>Vue.js</span>
-                    </div>
-                </div>
-
-                <!-- Project Card 3 (Placeholder) -->
-                <div class="group bg-cardBg rounded-xl p-6 border border-slate-700 hover:-translate-y-2 transition duration-300 hover:border-blue-500/50 flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-4">
-                        <i class="far fa-folder text-4xl text-blue-500"></i>
-                        <div class="flex gap-4">
-                            <a href="#" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition">Deep Learning Research</h3>
-                    <p class="text-slate-400 mb-4 flex-grow">
-                        Research project focusing on Image Recognition using Convolutional Neural Networks (CNN). Achieved 95% accuracy on the test dataset.
-                    </p>
-                    <div class="flex flex-wrap gap-2 font-mono text-xs text-blue-300 mt-auto">
-                        <span>Python</span>
-                        <span>PyTorch</span>
-                        <span>OpenCV</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-darkBg">
-        <div class="max-w-screen-xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-3">
-                <span class="text-blue-500">03.</span> Technical Skills
-                <div class="h-px bg-slate-700 flex-grow ml-4"></div>
-            </h2>
-            
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="text-xl font-bold text-white mb-6">Languages & Frameworks</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="px-4 py-2 bg-cardBg border border-blue-500/30 rounded-full text-slate-300 text-sm hover:border-blue-500 transition cursor-default">C/C++</span>
-                        <span class="px-4 py-2 bg-cardBg border border-blue-500/30 rounded-full text-slate-300 text-sm hover:border-blue-500 transition cursor-default">Java</span>
-                        <span class="px-4 py-2 bg-cardBg border border-blue-500/30 rounded-full text-slate-300 text-sm hover:border-blue-500 transition cursor-default">Python</span>
-                        <span class="px-4 py-2 bg-cardBg border border-blue-500/30 rounded-full text-slate-300 text-sm hover:border-blue-500 transition cursor-default">HTML/CSS</span>
-                        <span class="px-4 py-2 bg-cardBg border border-blue-500/30 rounded-full text-slate-300 text-sm hover:border-blue-500 transition cursor-default">JavaScript</span>
-                        <span class="px-4 py-2 bg-cardBg border border-blue-500/30 rounded-full text-slate-300 text-sm hover:border-blue-500 transition cursor-default">SQL</span>
-                        <span class="px-4 py-2 bg-cardBg border border-blue-500/30 rounded-full text-slate-300 text-sm hover:border-blue-500 transition cursor-default">Spring Boot</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white mb-6">Tools & Platforms</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="px-4 py-2 bg-cardBg border border-slate-600 rounded-full text-slate-300 text-sm hover:bg-slate-700 transition cursor-default">Git & GitHub</span>
-                        <span class="px-4 py-2 bg-cardBg border border-slate-600 rounded-full text-slate-300 text-sm hover:bg-slate-700 transition cursor-default">Linux / Unix</span>
-                        <span class="px-4 py-2 bg-cardBg border border-slate-600 rounded-full text-slate-300 text-sm hover:bg-slate-700 transition cursor-default">Docker</span>
-                        <span class="px-4 py-2 bg-cardBg border border-slate-600 rounded-full text-slate-300 text-sm hover:bg-slate-700 transition cursor-default">VS Code</span>
-                        <span class="px-4 py-2 bg-cardBg border border-slate-600 rounded-full text-slate-300 text-sm hover:bg-slate-700 transition cursor-default">IntelliJ IDEA</span>
-                        <span class="px-4 py-2 bg-cardBg border border-slate-600 rounded-full text-slate-300 text-sm hover:bg-slate-700 transition cursor-default">LaTeX</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-darkBg">
-        <div class="max-w-screen-md mx-auto px-4 text-center">
-            <p class="text-blue-500 font-mono mb-4">04. What's Next?</p>
-            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Get In Touch</h2>
-            <p class="text-lg text-slate-400 mb-10">
-                I am currently looking for internship opportunities and research collaborations. 
-                Whether you have a question or just want to say hi, my inbox is always open!
+    <section id="hero" class="hero-section">
+        <div class="profile-container">
+            <img src="assets/images/avatar.jpg" alt="Shouwei Li" class="avatar">
+            <h1>Shouwei Li</h1>
+            <p class="subtitle">CS Junior & Visual Storyteller</p>
+            <p class="bio-text">
+                Exploring the intersection of Code, Logic, and Light. <br>
+                Based in University, crafting algorithms and capturing moments.
             </p>
             
-            <a href="mailto:your.email@mail.nwpu.edu.cn" class="inline-block px-8 py-4 border-2 border-blue-500 text-blue-500 font-bold rounded hover:bg-blue-500/10 transition duration-300">
-                Say Hello
-            </a>
-            
-            <div class="mt-16 flex justify-center space-x-8">
-                <a href="https://github.com/" class="text-slate-400 hover:text-blue-500 transition transform hover:-translate-y-1">
-                    <i class="fab fa-github text-2xl"></i>
-                </a>
-                <a href="#" class="text-slate-400 hover:text-blue-500 transition transform hover:-translate-y-1">
-                    <i class="fab fa-linkedin text-2xl"></i>
-                </a>
-                <a href="mailto:your.email@mail.nwpu.edu.cn" class="text-slate-400 hover:text-blue-500 transition transform hover:-translate-y-1">
-                    <i class="fas fa-envelope text-2xl"></i>
-                </a>
+            <div class="social-icons">
+                <a href="https://github.com/crimsonvectors" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-play-circle"></i></a> 
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </section>
 
-    <footer class="py-6 text-center text-slate-500 text-sm bg-darkBg border-t border-slate-800">
-        <p class="font-mono">Designed & Built by Li Shouwei</p>
-        <p class="mt-2">&copy; 2024 - 2025</p>
+    <section id="projects" class="content-section">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Distributed System Study</h3>
+                <p class="tech-stack">Go / Docker / RPC</p>
+                <p>A lightweight distributed key-value storage system implementing Raft consensus algorithm.</p>
+                <a href="#" class="card-link">View Code &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Neural Network Visualization</h3>
+                <p class="tech-stack">Python / PyTorch / D3.js</p>
+                <p>Interactive web tool to visualize the activation layers of CNN models for educational purposes.</p>
+                <a href="#" class="card-link">View Code &rarr;</a>
+            </div>
+             <div class="card">
+                <h3>Personal Static Blog</h3>
+                <p class="tech-stack">HTML / CSS / JS</p>
+                <p>The minimalistic portfolio site you are looking at right now.</p>
+                <a href="#" class="card-link">View Code &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="content-section dark-bg">
+        <h2 class="section-title text-white">Visual Gallery</h2>
+        <p class="section-desc text-white">Moments captured through my lens.</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item item-wide">
+                <div class="placeholder-video">Video Showreel (Insert Embed Code Here)</div>
+            </div>
+            <div class="gallery-item"><div class="placeholder-img">Photo 1</div></div>
+            <div class="gallery-item"><div class="placeholder-img">Photo 2</div></div>
+            <div class="gallery-item"><div class="placeholder-img">Photo 3</div></div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; <span id="year"></span> Shouwei Li. All rights reserved.</p>
     </footer>
 
-    <script>
-        // Mobile Menu Toggle
-        const btn = document.getElementById('menu-toggle');
-        const menu = document.getElementById('navbar-default');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                menu.classList.add('hidden'); // Close mobile menu on click
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // Navbar background opacity on scroll
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                nav.classList.add('shadow-lg');
-            } else {
-                nav.classList.remove('shadow-lg');
-            }
-        });
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
