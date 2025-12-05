@@ -407,37 +407,3 @@ footer {
     }
 }
 
-/* =========================================
-   6. 胶片滚动长廊 (Infinite Marquee) - 修正版
-   ========================================= */
-
-/* 1. 修正父级 Section：强制去除默认的左右边距，让黑色背景能撑满 */
-#gallery.content-section {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    width: 100% !important;
-    max-width: 100vw !important; /* 强制占满视口宽度 */
-    overflow-x: hidden; /* 防止出现横向滚动条 */
-}
-
-/* 2. 黑色背景带容器 */
-.marquee-container {
-    width: 100vw; /* 使用视口宽度单位，确保绝对全宽 */
-    background-color: #000000;
-    padding: 4rem 0; /* 上下留白保持不变 */
-    margin-left: calc(-50vw + 50%); /* 【黑科技】强制冲破任何父容器限制，实现全屏 */
-    margin-right: calc(-50vw + 50%);
-    position: relative;
-    left: 0;
-    right: 0;
-}
-
-/* 轨道保持不变 */
-.marquee-track {
-    display: flex;
-    gap: 3rem;
-    width: max-content;
-    animation: marquee-scroll 60s linear infinite;
-}
-
-/* 其他样式保持不变... */
