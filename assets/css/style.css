@@ -328,3 +328,81 @@ footer {
         border-width: 6px; /* 手机上边框细一点 */
     }
 }
+/* --- V2: 极简胶片滚动画廊 (Infinite Marquee) --- */
+
+/* 1. 容器：黑色背景带，撑满宽度 */
+.marquee-container {
+    width: 100%;
+    background-color: #000000; /* 纯黑背景，突出照片 */
+    overflow: hidden; /* 隐藏超出屏幕的内容 */
+    padding: 3rem 0;  /* 上下给照片留出展示空间 */
+    position: relative;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+/* 2. 轨道：横向排列，无限长度 */
+.marquee-track {
+    display: flex;
+    gap: 3rem; /* 照片之间的间距，大一点更有呼吸感 */
+    width: max-content; /* 宽度随内容自动撑开 */
+    
+    /* 动画核心：向左平移 */
+    /* calc(-33.33%) 是因为我们放了3组图，移动完1组(1/3)就重置，实现无缝 */
+    animation: marquee-scroll 60s linear infinite; 
+}
+
+/* 3. 鼠标悬停：整个轨道暂停 */
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+/* 4. 照片卡片：统一高度 */
+.film-card {
+    height: 450px; /* 设定照片高度，你可以根据喜好改成 350px 或 500px */
+    flex-shrink: 0; /* 防止照片被压缩 */
+    position: relative;
+    transition: transform 0.4s ease; /* 悬停时的平滑过渡 */
+}
+
+/* 5. 图片样式：白边框 + 阴影 */
+.film-card img {
+    height: 100%;
+    width: auto; /* 宽度自适应 */
+    display: block;
+    
+    /* 胶片感核心：厚白边 + 投影 */
+    border: 10px solid #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    
+    /* 确保原色 */
+    filter: none !important;
+}
+
+/* 6. 交互：鼠标悬停在某张图上时，稍微放大并提亮 */
+.film-card:hover {
+    transform: scale(1.03); /* 微微放大 */
+    z-index: 10; /* 让它浮在最上面 */
+}
+
+/* --- 动画定义 --- */
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* 向左移动 1/3 的距离 (因为我们有3组，移完第1组就瞬间弹回0，人眼看不出) */
+        transform: translateX(calc(-100% / 3)); 
+    }
+}
+
+/* --- 移动端适配 --- */
+@media screen and (max-width: 768px) {
+    .film-card {
+        height: 280px; /* 手机上高度调小 */
+    }
+    .marquee-track {
+        gap: 1.5rem; /* 手机上间距调小 */
+        animation-duration: 40s; /* 手机上滚得稍微快一点点 */
+    }
+}
