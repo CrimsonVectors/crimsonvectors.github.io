@@ -253,3 +253,78 @@ footer {
     }
     .mobile-nav ul li { list-style: none; margin: 15px 0; text-align: center;}
 }
+
+/* --- 胶片风格滚动长廊 (Film Strip Style) --- */
+
+/* 1. 容器：隐藏溢出的内容，限制视野 */
+.film-strip-container {
+    width: 100%;
+    overflow: hidden; /* 超出屏幕的部分隐藏 */
+    padding: 2rem 0;  /* 上下留白，给阴影空间 */
+    position: relative;
+}
+
+/* 2. 轨道：把所有图片横向排成一行 */
+.film-track {
+    display: flex;
+    width: max-content; /* 宽度由内容撑开 */
+    gap: 2rem; /* 照片之间的间距 */
+    /* 调用动画：名字叫 scroll，时长 30秒，匀速，无限循环 */
+    animation: scroll 30s linear infinite;
+}
+
+/* 3. 悬停暂停：鼠标放上去，动画暂停 */
+.film-track:hover {
+    animation-play-state: paused;
+}
+
+/* 4. 单张照片容器 */
+.film-item {
+    flex-shrink: 0; /* 防止照片被压缩 */
+    height: 400px;  /* 【关键】统一高度！你可以根据需要改成 300px 或 500px */
+    position: relative;
+}
+
+/* 5. 图片样式：拍立得/胶片质感 */
+.film-item img {
+    height: 100%;       /* 高度填满容器 */
+    width: auto;        /* 宽度按比例自适应 */
+    display: block;
+    
+    /* 核心设计：白色边框 + 阴影 */
+    border: 12px solid #ffffff; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5); /* 深色阴影增加立体感 */
+    
+    /* 确保原色显示，无滤镜 */
+    filter: none; 
+    transition: transform 0.3s ease; /* 简单的交互动效 */
+}
+
+/* 鼠标悬停在某张照片上时，稍微放大一点点 */
+.film-item img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+
+/* --- 定义滚动动画 --- */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* 向左移动 50% 的距离 */
+        /* 因为我们复制了两组照片，移动 50% 正好是移动完第一组的长度，从而无缝衔接 */
+        transform: translateX(-50%); 
+    }
+}
+
+/* --- 移动端适配 --- */
+@media screen and (max-width: 768px) {
+    .film-item {
+        height: 250px; /* 手机上高度减小，不然太大了 */
+    }
+    .film-item img {
+        border-width: 6px; /* 手机上边框细一点 */
+    }
+}
